@@ -8,7 +8,7 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    'css/base.css' : 'sass/base.scss'
+                    '../compiled/base.css' : 'sass/base.scss'
                 }
             }
         },
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
         kss: {
             options: {
                 includeType: 'css',
-                includePath: 'css/base.css',
+                includePath: '../compiled/base.css',
             },
             dist: {
                 files: {
@@ -33,6 +33,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-kss');
     //grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('runSass',['sass']);
+    grunt.registerTask('dosass',['sass']);
     grunt.registerTask('styleguide', ['kss']);
+    grunt.registerTask('default',['sass','kss']);
 };
