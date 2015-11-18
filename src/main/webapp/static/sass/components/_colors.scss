@@ -1,0 +1,29 @@
+/* Colors
+
+Colors should be pretty and seen from far away.
+
+Markup: <div class="{$modifiers}">Some text, preferrably anything but Lorem ipsum in there</div>
+
+.lightblue  - LightBlue text box.
+.red        - Red text box.
+.orange     - Orange text box.
+.green      - Green text box.
+
+Styleguide 2
+*/
+
+.lightblue,.red,.orange,.green {
+  padding: 10px;
+}
+.lightblue {
+  background-color: lightblue;
+}
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: orange;
+}
+.green {
+  background-color: green;
+}

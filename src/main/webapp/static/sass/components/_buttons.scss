@@ -1,33 +1,25 @@
-/*
-Buttons
+/* Buttons
 
-A majority of buttons in the site are built from the same base class.
+Buttons can and should be clicked.
 
-:hovered    - Highlight the button when hovered.
-:disabled   - Make the button change appearance to reflect it being disabled.
-.primary    - Indicate that the button is the primary feature of this form.
-.secondary  - Indicates that the button is the secondary feature of this form
+Markup: <button class="button {$modifiers}">
 
-Markup:
-<a href="#" class="button {$modifiers}">Link Button</a>
-<button class="button {$modifiers}">Button Element</button>
+:hover - Highlight the button when hovered.
+.vip - Displays a very important button
 
-Styleguide 1.1
+Styleguide 1
 */
 
-.button{
-    min-width : 100px;
-    height : 35px;
-	.primary {
-	   background-color : red;
-	}
-	.secondary {
-	   background-color : yellow;
-	}
-}
-.button:hover{
-  background-color : gold;
-}
-.button:disabled {
-  background-color: palegoldenrod;
+.button {
+  background-color: blue;
+  text-decoration: none;
+  font-size: 20px;
+  min-width: 100px;
+  height: 35px;
+  &:hover {
+	background-color: lighten(blue,20%);
+  }
+  &.vip {
+	font-size: 40px;
+  }
 }
