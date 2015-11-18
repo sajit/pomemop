@@ -1,4 +1,4 @@
 .idea/
 target-grunt/
 pomemop.iml
-compiled/
+compiled/*.html
