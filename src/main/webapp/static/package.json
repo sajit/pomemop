@@ -6,7 +6,10 @@
     "grunt": "~0.4.5",
     "kss" : "~2.1.0",
     "grunt-contrib-sass" : "~0.9.2",
+    "grunt-contrib-watch" : "0.6.1",
+    "grunt-contrib-clean" : "0.7.0",
     "grunt-kss-node": "1.0.0",
-    "grunt-kss" : "0.2.8"
+    "grunt-kss" : "0.2.8",
+    "grunt-maven": "~1.1.0"
   }
 }
