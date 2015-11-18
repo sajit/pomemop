@@ -8,5 +8,37 @@
     <artifactId>mashup</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>pl.allegro</groupId>
+                <artifactId>grunt-maven-plugin</artifactId>
+                <version>1.5.0</version>
+                <configuration>
+                    <!-- example options usage to get verbose output in logs -->
+                    <gruntOptions>
+                        <gruntOption>--verbose</gruntOption>
+                    </gruntOptions>
 
+                    <!-- example npm install env variable -->
+                    <!--<npmEnvironmentVar>-->
+                        <!--<PHANTOMJS_CDNURL>http://cnpmjs.org/downloads</PHANTOMJS_CDNURL>-->
+                    <!--</npmEnvironmentVar>-->
+
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>create-resources</goal>
+                            <goal>npm</goal>
+                            <!-- or npm-offline if npm failure is not an option -->
+                            <goal>bower</goal>
+                            <goal>grunt</goal>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
