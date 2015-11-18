@@ -17,9 +17,22 @@ module.exports = function(grunt) {
                 files: '**/*.scss',
                 tasks: ['sass']
             }
+        },
+        kss: {
+            options: {
+                includeType: 'css',
+                includePath: 'css/base.css',
+            },
+            dist: {
+                files: {
+                    '../docs/': ['../docs/']
+                }
+            }
         }
     });
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-kss');
     //grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default',['sass']);
+    grunt.registerTask('runSass',['sass']);
+    grunt.registerTask('styleguide', ['kss']);
 };
