@@ -2,10 +2,11 @@
 - maven
 - grunt
 - sass
+- scss lint
 - kss-node
 - webjars
 
-## An example project on how to build a maven based style guide and then publish it as a webjar.
+## An example project on how to build a maven based front-end libary  and then publish it as a webjar.
 
 ## Please refer to <a href="//www.webjars.org/documentation" target="_blank">Webjar documentation</a>
 on how to use webjars in a project.

@@ -38,6 +38,7 @@
                             <goal>npm</goal>
                             <!-- or npm-offline if npm failure is not an option -->
                             <goal>grunt</goal>
+                            <goal>clean</goal>
                         </goals>
                     </execution>
                 </executions>
@@ -74,7 +75,7 @@
                             <outputDirectory>${destDir}</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>${basedir}/compiled</directory>
+                                    <directory>${basedir}/target-grunt/compiled</directory>
                                     <includes>
                                         <include>base.css</include>
                                     </includes>
